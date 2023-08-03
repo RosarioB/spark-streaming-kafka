@@ -3,7 +3,7 @@ In this branch we will make use of Spark Structured Streaming and Scala to read 
 
 ## Components
 
-1. In the folder `producer` there is a Kafka producer which reads the data from this [API](https://digitransit.fi/en/developers/apis/4-realtime-api/vehicle-positions/high-frequency-positioning/) and inserts them inside a Kafka topic called 'vehicle position'
+1. In the folder `producer` there is a Kafka producer which reads the data from this [API](https://digitransit.fi/en/developers/apis/4-realtime-api/vehicle-positions/high-frequency-positioning/) and inserts them inside a Kafka topic called `vehicle position`
 
 2.  In the folder `docker` there is the docker compose file (`kafka-docker-compose.yml`) which contains all the containers we will make use of. In particular:
     - `zookeeper`, `broker` and  `control-center` are related to the Kafka infrastructure.

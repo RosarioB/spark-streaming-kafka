@@ -9,7 +9,7 @@ In this branch we will make use of Spark Structured Streaming and Python to read
     - `zookeeper`, `broker` and  `control-center` are related to the Kafka infrastructure.
     - `init-kafka` is a container used to create the topic `vehicle-positions` in the cluster
     - `kafka-producer` is the container of the producer discussed in the previous step.
-    - `jupeter-spark` is a container which contains both `Jupiter` and `PySpark` version 3.4.1.
+    - `jupiter-spark` is a container which contains both `Jupyter` and `PySpark` version 3.4.1.
 
 3. In the folder `notebook` there is the notebook `spark_streaming.ipynb` which we will use in Jupiter to execute our tasks with Spark Structured Streaming.
 

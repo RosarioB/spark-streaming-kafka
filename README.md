@@ -13,6 +13,8 @@ In this branch we will make use of Spark Structured Streaming and Python to read
 
 3. In the folder `notebook` there is the notebook `spark_streaming.ipynb` which we will use in Jupiter to execute our tasks with Spark Structured Streaming.
 
+4. In the folder `csv` there is a csv file `operators.csv` useful to create a static dataframe from. 
+
 ## Execution
 
 1. We need to create the docker image of the producer. To do that we need to run:

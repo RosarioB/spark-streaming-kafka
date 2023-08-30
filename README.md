@@ -26,7 +26,11 @@ In this branch we will make use of Spark Structured Streaming and Python to read
 4. The producer should start to write in the topic `vehicle-positions` right away. After a while we can stop it if we don't want too much data. However to make sure that the producer is writing in the topic we can execute:
     `docker exec -it broker kafka-console-consumer --bootstrap-server broker:29092 --from-beginning --topic vehicle-positions --property print.key=true`
 
-5. If we get the logs of the container `jupiter-pyspark` we should see a URL where the Jupiter server is listening, like `http://127.0.0.1:8888/lab?token=634bce1cd959e890b8c4c892386da72898027abc9c480751` . If we paste this URL in the browser we shold be able to connect to the Jupiter server and we can upload the notebook `spark_streaming.ipynb` and use it.
+5. If we get the logs of the container `jupiter-pyspark` we should see a URL where the Jupiter server is listening, like `http://127.0.0.1:8888/lab?token=634bce1cd959e890b8c4c892386da72898027abc9c480751` . If we paste this URL in the browser we shold be able to connect to the Jupiter server.
+
+6. Once we have entered the Jupiter server from the broswer, we can use the GUI to upload to the root folder both the notebook `spark_streaming.ipynb` (inside the directory notebook) and the file `operators.csv` (inside the directory csv).
+
+7. Now we can use the notebook `spark_streaming.ipynb`.
 
 ## SparkUI
 SparkUI at http://localhost:4040/
